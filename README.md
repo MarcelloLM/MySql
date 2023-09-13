@@ -1,4 +1,4 @@
-# MySQL - Repositório de Exemplo
+# MySQL 
 
 Este repositório serve como um guia básico para usar o MySQL, um sistema de gerenciamento de banco de dados relacional de código aberto amplamente utilizado.
 
