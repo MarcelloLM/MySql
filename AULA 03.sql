@@ -179,4 +179,28 @@ SELECT ename FROM emp WHERE sal < 1000 or sal > 3000;
 -- Exibir todos os funcionarios que ganhem mais de 2500 e trabalhem nos departamentos 10 ou 30--
 SELECT ename FROM emp WHERE sal > 2500 and (deptno = 10 or deptno = 30);
 
+-- Selecionando e exibindo de forma ordenanda todo o conteudo da tabela emp de acordo com o conteudo job em ordem crescente--
+SELECT * FROM emp ORDER BY job; 
+
+-- Seleccionando e exibindo de forma ordenada todo o conteudo da tabela dept de acordo com o conteudo da coluna dname em ordem crescente--
+SELECT * FROM dept order by dname DESC; 
+
+-- selecionando e exibindo de forma ordenada os camps ename e job da tabela emp de acordo com o conteudo da coluna job e ename em ordem crescente--
+SELECT * FROM ename, job order by ename, job; 
+
+-- FUNCAO MAX--
+SELECT MAX(sal) FROM emp;
+-- FUNCAO MIN--
+SELECT MIN(sal) FROM emp; 
+
+-- FUNCAO SUM--
+SELECT SUM(sal) FROM emp WHERE job='MANAGER';
+
+-- FUNCAO AVG--
+SELECT AVG(sal) FROM emp; 
+
+-- FUNCAO COUNT --
+SELECT COUNT(EMPNO) FROM emp WHERE job='SALESMAN'; 
+SELECT count(EMPNO) from emp; 
+
 -- --
